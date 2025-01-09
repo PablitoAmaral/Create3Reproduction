@@ -33,7 +33,7 @@ contract Counter {
         bytes memory a = abi.encode(
             0,
             uint32(5),
-            0x779877A7B0D9E8603169DdbD7836e478b4624789
+            abi.encodePacked(0x779877A7B0D9E8603169DdbD7836e478b4624789)
         );
         console.logBytes(a);
 
